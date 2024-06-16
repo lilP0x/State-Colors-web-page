@@ -1,0 +1,35 @@
+.container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+  .box {
+    border: 2px solid black; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: white; 
+    width: 300px; 
+    text-align: center; 
+  }
+  
+  .container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .form-outline {
+    margin-bottom: 16px;
+  }
+  
+  .form-label {
+    display: block; 
+    font-weight: bold; 
+  }
+  

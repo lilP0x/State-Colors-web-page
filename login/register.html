@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Colors</title>
+    <!-- Agrega enlaces a estilos CSS si es necesario -->
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h2>Register</h2>
+      <form action="#" th:action="@{/login/register}" method="post">
+        <!-- Campo de correo electrónico -->
+        <div class="form-outline">
+          <label class="form-label" for="email">Email address</label>
+          <input type="email" id="email" name="email" th:required="required"
+                 placeholder="Enter a valid email address" />
+        </div>
+    
+        <!-- Campo de contraseña -->
+        <div class="form-outline">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" id="password" name="password" th:required="required"
+                 placeholder="Enter password" />
+        </div>
+
+        <!-- Botón de registro -->
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </form>
+      
+      <!-- Enlace de regreso -->
+      <div class="text-center mt-3">
+        <p>Already have an account? <a href="/login" class="link-primary">Login</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
